@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --a-eg: 136px;
+            --bg-c: #73C6EA;
+        }
+        body {
+          background: var(--bg-c);
+        }
+        .wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .black {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: var(--a-eg) solid transparent;
+            border-bottom: 196px solid #0D1335;
+            margin-top: calc(-1 * var(--a-eg));
+        }
+
+        .orange {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: var(--a-eg) solid transparent;
+            border-bottom: 152px solid #DC6638;
+            margin-top: -100px;
+        }
+
+        .white {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: var(--a-eg) solid transparent;
+            border-bottom: 109px solid #FBFAE2;
+            margin-top: -63px;
+        }
+        .transparent {
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            z-index: 10;
+            bottom: -32px;
+            background: var(--bg-c);
+      }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="black">
+        </div>
+        <div class="orange">
+        </div>
+        <div class="white">
+        </div>
+      <div class="transparent">
+        </div>
+    </div>
+</body>
+
+</html>
